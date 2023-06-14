@@ -1,6 +1,6 @@
 {
     "version" : 2,
-    "name" : "product-application",
+    "name" :"urlshortener",
     "builds":[
         {
             "src":"./index.js",
