@@ -70,7 +70,7 @@ router.post("/", async (req, res) => {
 router.delete("/", async (req, res) => {
   try {
     const Url = await URL.deleteOne({ urlcode: req.body.urlcode });
-    if (!Url) return res.status(200).send({ message: "Not Deleted" });
+    if (!Url) return res.status(400).send({ message: "Not Deleted" });
     res.status(200).send({ message: "Succesfully deleted" });
   } catch (error) {
     console.log(error);
